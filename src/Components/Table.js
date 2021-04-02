@@ -2,9 +2,9 @@ import React, { useMemo } from 'react'
 import { useTable } from 'react-table'
 import { COLUMN } from '../assets/ChromosomeColumn';
 
-const Table = (props) => {
+const Table = ({ DATA }) => {
     const columns = useMemo(() => COLUMN, [])
-    const data = useMemo(() => props.DATA, [])
+    const data = useMemo(() => DATA, [DATA])
 
     const TableInstance = useTable({
         columns,
