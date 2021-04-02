@@ -64,7 +64,6 @@ const TableComp = () => {
                         </div>
                     :
                     null
-
             }
         </div >
     )

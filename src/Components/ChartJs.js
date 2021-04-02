@@ -3,17 +3,6 @@ import { Line, Pie, Bar } from 'react-chartjs-2'
 import { chartData } from '../assets/ChartData'
 
 const Chart = () => {
-    const options = {
-        title: {
-            display: true,
-            text: "Chart",
-            fontSize: 25,
-        },
-        legend: {
-            display: true,
-            position: "center"
-        }
-    }
 
     return (
         <div>
