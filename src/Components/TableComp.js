@@ -20,7 +20,7 @@ const TableComp = () => {
             setLoading(true)
             let res = await fetch(`https://api.nextprot.org/chromosome-report/${chromosome}.json`)
             res = await res.json();
-            if (res.type == "ChromosomeNotFoundException") {
+            if (res.type === "ChromosomeNotFoundException") {
                 setData({ response: "404", message: res.message })
             }
             else {
@@ -43,7 +43,7 @@ const TableComp = () => {
                 <div>
                     <Input title="Chromosome" desc="Enter the Chromosome (Y, X, WX,...) " value={chromosome} onChange={setChromosome} />
                 </div>
-                <button className="btn btn-primary" disabled={chromosome.length == 0 ? true : false} onClick={() => fetchData()} >Get Data</button>
+                <button className="btn btn-primary" disabled={chromosome.length === 0 ? true : false} onClick={() => fetchData()} >Get Data</button>
             </div>
             {
                 !iniLoad ?
