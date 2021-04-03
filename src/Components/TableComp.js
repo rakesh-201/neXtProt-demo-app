@@ -49,7 +49,7 @@ const TableComp = () => {
                 !iniLoad ?
                     (!loading) ?
                         data.response === "200" ?
-                            <div className="tableCont">
+                            <div>
                                 <Table DATA={data.entries} />
                             </div>
                             :
