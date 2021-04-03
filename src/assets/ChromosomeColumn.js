@@ -28,6 +28,26 @@ export const COLUMN = [
         accessor: 'proteinExistence'
     },
     {
+        Header: 'Proteomics',
+        accessor: 'proteomics',
+        Cell: (value) => { return value === "true" ? "true" : "false" }
+    },
+    {
+        Header: 'Antibody',
+        accessor: 'antibody',
+        Cell: (value) => { return value === "true" ? "true" : "false" }
+    },
+    {
+        Header: '3D',
+        accessor: '3D',
+        Cell: (value) => { return value === "true" ? "true" : "false" }
+    },
+    {
+        Header: 'Disease',
+        accessor: 'disease',
+        Cell: (value) => { return value === "true" ? "true" : "false" }
+    },
+    {
         Header: 'Isoforms',
         accessor: 'isoforms'
     },
