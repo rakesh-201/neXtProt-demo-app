@@ -12,13 +12,13 @@ const Navbar = () => {
                     </button>
                     <div className="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <Link className="nav-link text-primary" to="/" >Feature Viewer Component</Link>
+                            <li className="nav-item mx-2  ">
+                                <Link className="nav-link text-primary " to="/" >Feature Viewer Component</Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item mx-2 ">
                                 <Link className="nav-link text-primary" to="/table" >Chromosomal Data using Table</Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item mx-2 ">
                                 <Link className="nav-link text-primary" to="/other" >Other Components</Link>
                             </li>
                         </ul>

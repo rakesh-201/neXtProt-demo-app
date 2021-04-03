@@ -28,22 +28,6 @@ export const COLUMN = [
         accessor: 'proteinExistence'
     },
     {
-        Header: 'Proteomics',
-        accessor: 'proteomics'
-    },
-    {
-        Header: 'Antibody',
-        accessor: 'antibody'
-    },
-    {
-        Header: '3D',
-        accessor: '3D'
-    },
-    {
-        Header: 'Disease',
-        accessor: 'disease'
-    },
-    {
         Header: 'Isoforms',
         accessor: 'isoforms'
     },
