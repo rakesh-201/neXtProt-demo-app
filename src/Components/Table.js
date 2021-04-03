@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react'
-import { useTable, usePagination, safeUseLayoutEffect } from 'react-table'
+import { useTable, usePagination } from 'react-table'
 import Select from 'react-select'
 import { COLUMN } from '../assets/ChromosomeColumn';
 
