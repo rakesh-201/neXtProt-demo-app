@@ -43,9 +43,32 @@ const Table = ({ DATA }) => {
                 <table {...getTableProps()}>
                     <thead>
                         {headerGroups.map(headerGroup => (
-                            <tr {...headerGroup.getHeaderGroupProps()} >
+                            <tr {...headerGroup.getHeaderGroupProps()}  >
                                 {headerGroup.headers.map(column => (
-                                    <th {...column.getHeaderProps()}> {column.render("Header")} </th>
+                                    <th {...column.getHeaderProps()} className="bg-light" >
+                                        <div className="dropdown">
+                                            <button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Charts
+                                            </button>
+                                            <ul className="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                                <li><a className="dropdown-item text-info" href="#">Bar Chart</a></li>
+                                                <li><a className="dropdown-item text-info" href="#">Line Chart</a></li>
+                                                <li><a className="dropdown-item text-info" href="#">Pie Chart</a></li>
+                                                <li><a className="dropdown-item text-info" href="#">Scatter Chart</a></li>
+                                                <li><a className="dropdown-item text-info" href="#">Bubble Chart</a></li>
+                                                <li><a className="dropdown-item text-info" href="#">Area Chart</a></li>
+                                            </ul>
+                                        </div>
+                                    </th>
+                                ))}
+                            </tr>
+                        ))}
+                    </thead>
+                    <thead>
+                        {headerGroups.map(headerGroup => (
+                            <tr {...headerGroup.getHeaderGroupProps()}  >
+                                {headerGroup.headers.map(column => (
+                                    <th {...column.getHeaderProps()}>{column.render("Header")}</th>
                                 ))}
                             </tr>
                         ))}
