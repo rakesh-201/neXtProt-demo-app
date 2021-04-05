@@ -41,7 +41,7 @@ const TableComp = () => {
             <div className="m-5">
 
                 <div>
-                    <Input title="Chromosome" desc="Enter the Chromosome (Y, X, WX,...) " value={chromosome} onChange={setChromosome} />
+                    <Input title="Chromosome" desc="Enter the Chromosome (Y, X, MT,...) " value={chromosome} onChange={setChromosome} />
                 </div>
                 <button className="btn btn-primary" disabled={chromosome.length === 0 ? true : false} onClick={() => fetchData()} >Get Data</button>
             </div>
